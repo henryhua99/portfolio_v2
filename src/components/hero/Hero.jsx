@@ -7,10 +7,9 @@ const heroContent = {
   heroMobileImage: "img-mobile",
   heroTitleName: "Henry",
   heroDesignation: "web developer",
-  heroDescriptions: `I'm a henry based web designer  focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.`,
+  heroDescriptions: `Hello I'm henry. I'm a full stack web developer located in Yangon, Myanmar.
+  I have a serious passion for developing Websites and softwares.
+  Let's make something special.`,
   heroBtn: "more about me",
 };
 

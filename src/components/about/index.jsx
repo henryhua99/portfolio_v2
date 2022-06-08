@@ -4,7 +4,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 import Skills from "./Skills";
-import cv from "../../assets/files/Sai Khant Thura CV.docx"
+import cv from "../../assets/files/Sai Khant Thura CV.pdf"
 
 const index = () => {
   return (

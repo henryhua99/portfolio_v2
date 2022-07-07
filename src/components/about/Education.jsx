@@ -2,25 +2,16 @@ import React from "react";
 
 const educationContent = [
   {
-    year: "2018",
-    degree: "HND Diploma in computing",
-    institute: "GUSTO UNIVERSITY",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
-  },
-  {
     year: "2021",
     degree: "BACHELOR DEGREE",
     institute: "UNIVERSITY OF GLOUCESTERSHIRE",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    details: ``,
   },
   {
-    year: "2009",
-    degree: "BACHELOR DEGREE ",
-    institute: "TUNIS HIGH SCHOOL",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "2018",
+    degree: "HND Diploma in computing",
+    institute: "GUSTO UNIVERSITY",
+    details: ``,
   },
 ];
 

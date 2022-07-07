@@ -5,22 +5,19 @@ const experienceContent = [
     year: "   2022 - Present",
     position: " Web Developer",
     compnayName: "Freelance",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    details: ` `,
   },
   {
     year: "2019 Dec - 2021 Nov",
     position: " Web Developer",
     compnayName: "Aethereal-systems",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    details: ``,
   },
   {
     year: "2018 Nov - 2019 Nov",
     position: "Junior Web Developer",
     compnayName: "Trifinity software & Education",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    details: ``,
   },
 ];
 

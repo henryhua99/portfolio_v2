@@ -7,7 +7,7 @@ const personalInfoContent = [
   { meta: "Age", metaInfo: "23 Years" },
   { meta: "Nationality", metaInfo: "Shan" },
   { meta: "Freelance", metaInfo: "Available" },
-  { meta: "Address", metaInfo: "Muse, Shan State" },
+  { meta: "Address", metaInfo: "Sanchaung, Yangon" },
   { meta: "phone", metaInfo: "+959262696263" },
   { meta: "Email", metaInfo: "henryhua1999@gmail.com" },
   { meta: "langages", metaInfo: "Burmese, Shan, Chinese, English" },

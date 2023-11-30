@@ -1,16 +1,16 @@
 import React from "react";
 
 const personalInfoContent = [
-  { meta: "first name", metaInfo: "Sai Khant" },
-  { meta: "last name", metaInfo: "Thura" },
-  { meta: "Nickname", metaInfo: " Henry" },
-  { meta: "Age", metaInfo: "23 Years" },
-  { meta: "Nationality", metaInfo: "Shan" },
-  { meta: "Freelance", metaInfo: "Available" },
-  { meta: "Address", metaInfo: "Sanchaung, Yangon" },
-  { meta: "phone", metaInfo: "+959262696263" },
-  { meta: "Email", metaInfo: "henryhua1999@gmail.com" },
-  { meta: "langages", metaInfo: "Burmese, Shan, Chinese, English" },
+  { meta: "first name", metaInfo: "Henry", hasColor: "" },
+  { meta: "last name", metaInfo: "Hua", hasColor: "" },
+  { meta: "Age", metaInfo: "24 Years", hasColor: "" },
+  { meta: "Nationality", metaInfo: "Buddhists", hasColor: "" },
+  { meta: "Freelance", metaInfo: "Available", hasColor: "green" },
+  // { meta: "Address", metaInfo: "Tunis", hasColor: "" },
+  { meta: "phone", metaInfo: "+959262696263", hasColor: "" },
+  { meta: "Email", metaInfo: "henryhua1999@mail.com", hasColor: "" },
+  // { meta: "Skype", metaInfo: " steve.milner", hasColor: "" },
+  { meta: "langages", metaInfo: "Shan, Chinese,Burma, English", hasColor: "" },
 ];
 
 const PersonalInfo = () => {
@@ -19,7 +19,9 @@ const PersonalInfo = () => {
       {personalInfoContent.map((val, i) => (
         <li key={i}>
           <span className="title">{val.meta}: </span>
-          <span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">
+          <span
+            className={`value d-block d-sm-inline-block d-lg-block d-xl-inline-block ${val.hasColor}`}
+          >
             {val.metaInfo}
           </span>
         </li>

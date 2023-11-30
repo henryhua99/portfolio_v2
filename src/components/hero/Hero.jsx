@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Index from "../../components/about/index";
+import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
+import cancelImg from "../../../public/assets/img/cancel.svg";
+import AboutMain from "../about";
+import Image from "next/image";
 
 const heroContent = {
-  heroImage: "img/hero/dark.jpg",
-  heroMobileImage: "img-mobile",
+  heroImage: "/assets/img/hero/dark.jpg",
+  heroMobileImage: heroImgMobile,
   heroTitleName: "Henry",
   heroDesignation: "web developer",
   heroDescriptions: `Hello I'm henry. I'm a full stack web developer located in Yangon, Myanmar.
@@ -24,21 +27,18 @@ const Hero = () => {
       <div className="row home-details-container align-items-center">
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
-          style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + heroContent.heroImage
-            })`,
-          }}
+          style={{ backgroundImage: `url(${heroContent.heroImage})` }}
         ></div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
           <div>
-            <img
-              src={`img/hero/${heroContent.heroMobileImage}.jpg`}
+            <Image
+              src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
+              // style={{width:'100%',height:'100%'}}
             />
             <h1 className="text-uppercase poppins-font">
-              I'm {heroContent.heroTitleName}.
+              {"I'm"} {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
@@ -62,20 +62,20 @@ const Hero = () => {
       >
         <div>
           <button className="close-modal" onClick={toggleModalOne}>
-            <img src="/img/cancel.svg" alt="close icon" />
+            <Image src={cancelImg} alt="close icon" />
           </button>
           {/* End close icon */}
 
           <div className="box_inner about">
             <div data-aos="fade-up" data-aos-duration="1200">
-              <div className="title-section text-left text-sm-center">
+              <div className="title-section text-start text-sm-center">
                 <h1>
                   ABOUT <span>ME</span>
                 </h1>
                 <span className="title-bg">Resume</span>
               </div>
               {/* End title */}
-              <Index />
+              <AboutMain />
             </div>
           </div>
         </div>

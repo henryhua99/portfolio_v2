@@ -22,7 +22,6 @@ const Address = () => {
         <span className="d-block">call me</span>{" "}
         <a href="Tel:+959262696263">+959262696263</a>
       </p>
-      {/* End .custom-span-contact */}
     </>
   );
 };

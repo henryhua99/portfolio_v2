@@ -4,7 +4,9 @@ import Education from "./Education";
 import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 import Skills from "./Skills";
-import cv from "../../assets/files/Sai Khant Thura CV.pdf"
+import cv from "../../../public/assets/files/Sai Khant Thura CV.pdf"
+import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
+import Image from "next/image";
 
 const index = () => {
   return (
@@ -23,8 +25,8 @@ const index = () => {
               {/* End .col */}
 
               <div className="col-12 d-block d-sm-none">
-                <img
-                  src="img/hero/img-mobile.jpg"
+                <Image
+                  src={heroImgMobile}
                   className="img-fluid main-img-mobile"
                   alt="about avatar"
                 />
@@ -60,7 +62,7 @@ const index = () => {
         {/* Skills Starts */}
         <div className="row">
           <div className="col-12">
-            <h3 className="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">
+            <h3 className="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-start text-sm-center custom-title ft-wt-600">
               My Skills
             </h3>
           </div>
@@ -73,7 +75,7 @@ const index = () => {
         {/* Experience & Education Starts */}
         <div className="row">
           <div className="col-12">
-            <h3 className="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">
+            <h3 className="text-uppercase pb-5 mb-0 text-start text-sm-center custom-title ft-wt-600">
               Experience <span>&</span> Education
             </h3>
           </div>
